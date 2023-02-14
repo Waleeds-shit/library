@@ -1,0 +1,10 @@
+<div>
+    <p class="p">Turn dark mode on</p>
+    <p class="p"><input type="checkbox" (change)="toggleLightMode($event)"/></p>
+</div>
+<div>
+    <p class="p">Add Admin</p>
+    <p class="p"><input type="text" style="width: 150px;border-radius:10px" (change) = "enterName($event)" /></p>
+</div>
+<p class="p1" *ngFor="let manager of managers.managers;let i =index">manager {{i+1}} {{manager}}</p>
+    

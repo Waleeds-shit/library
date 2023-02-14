@@ -1,0 +1,34 @@
+    <form class="form-container" (ngSubmit) = "onSubmit(formDetails)" #formDetails="ngForm">
+      <div>
+        <br><br>
+      </div>
+        <div class="textbox">
+          <input type="text" placeholder="book name" ngModel name="bookname" required #bookname="ngModel">
+          <label>Book name</label>
+          <p class="bookname-validation-msg" *ngIf="bookname.invalid&& bookname.touched" [ngStyle] = "{'color':'red'}">Book Name Cannot be empty</p>
+        </div>
+        <div class="textbox">
+          <input type="text" placeholder="Book Author" ngModel name="authorname" required #authorname="ngModel">
+          <label>Book Author</label>
+          <p class="authorname-validation-msg" *ngIf="authorname.invalid&& authorname.touched" [ngStyle] = "{'color':'red'}">Author Name Cannot be empty</p>
+        </div>
+        <div class="textbox">
+          <input class="inputTags" type="text" placeholder="Book Tags: History, Math, CS .. " ngModel name="tags" required #tags="ngModel">
+          <label>Book Tags</label>
+          <p class="bookname-validation-msg" *ngIf="tags.invalid&& tags.touched" [ngStyle] = "{'color':'red'}">Tags Cannot be empty</p>
+        </div>
+        <div class="textbox">
+          <input type="number" placeholder="Book Quantity " ngModel name="quantity" required #quantity="ngModel">
+          <label>Book Quantity</label>
+          <p class="bookname-validation-msg" *ngIf="quantity.invalid&& quantity.touched" [ngStyle] = "{'color':'red'}">Quantity Cannot be empty</p>
+        </div>
+        <div class="textbox">
+          <input type="file" id="file" accept="image/*" (change)="onselect($event)" ngModel name="image" required #image="ngModel" >
+          <label>Upload Image</label>
+          <p class="bookname-validation-msg" *ngIf="quantity.invalid&& quantity.touched" [ngStyle] = "{'color':'red'}">Quantity Cannot be empty</p>
+        </div>
+        <button type="button" id="btn1"><label for="file">Click to Upload</label></button>
+        <button  id="btn" [disabled] = "formDetails.invalid " type="submit">Add Book</button>
+      
+      </form>
+      

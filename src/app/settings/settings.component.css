@@ -1,0 +1,14 @@
+div {
+    display: flex;
+    margin: 2rem;
+    border: 4px ridge rgb(56, 74, 113);
+}
+.p{
+    flex-grow:1;
+    text-align: center;
+    width:200px;
+}
+.p1{
+    text-align: center;
+    border: 4px ridge rgb(56, 74, 113);
+}

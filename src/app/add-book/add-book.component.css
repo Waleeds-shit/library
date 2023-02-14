@@ -1,0 +1,92 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 20px;
+}
+
+input{
+    height: 25px;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.inputTags{
+    border-radius: 10px;
+    width: 300px;
+}
+
+p{
+    font-size: 20px;
+}
+
+#btn{
+    background-color: rgb(56, 74, 113);
+    color: white;
+    width: 150px;
+    height: 30px;
+    font-size: 15px;
+    float: right;
+    margin: 4rem;
+    border-radius: 27px;
+}
+
+#file{
+    display:none;
+}
+#btn1{
+    width: 200px;
+    background-color: rgb(56, 74, 113);
+    border-radius: 27px;
+}
+
+label{
+    color: white;
+    height: 30px;
+    font-size: 15px;
+}
+.textbox{
+    position: relative;
+    margin: 0 10px 40px;
+}
+.textbox input{
+    width: 250px;
+    height: 40px;
+    border-radius: 30px;
+    background: rgb(56, 74, 113);
+    border: 0;
+    padding-left: 126px;
+    font-size: 16px;
+    font-family: inherit;
+    color: rgb(255 255 255 / 96%);
+    transition: 0.3s;
+}
+.textbox label {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    transform-origin: 0% 0%;
+    pointer-events: none;
+    top: 4px;
+    left: 4px;
+    height: 35px;
+    width: 100px;
+    border-radius: 27px;
+    background: #5071fa;
+    transition: 0.3s;
+}
+.textbox input::placeholder{
+    color: rgb(255 255 255 / 50%);
+}
+
+.textbox
+:is(input:focus, input:valid){
+    padding-left: 20px;
+}
+
+.textbox
+:is(input:focus, input:valid)
+~label{
+    translate: 0 -54PX;
+    scale: 0.825;
+}

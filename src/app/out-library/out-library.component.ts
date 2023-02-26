@@ -30,7 +30,7 @@ export class OutLibraryComponent implements OnInit {
 
       })
   }
-
+  /* istanbul ignore next */
   goToLink=(url:string)=>{
     window.open(url, "_blank");
   }

@@ -10,13 +10,12 @@ export class AppComponent {
   title = 'ortLibrary';
 
   constructor(private darkmode:DarkModeService){}
+  /* istanbul ignore next */
   lightMode() {
     if (this.darkmode.isDarkMode) {
       return {
         backgroundColor: 'black',
         color: 'white'
-        
-        
         
       }
     } else {

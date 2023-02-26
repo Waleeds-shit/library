@@ -6,7 +6,10 @@ ul {
     margin: 0;
     padding: 0;
     border: 4px ridge rgb(56, 74, 113);
-    background-color: rgb(56, 74, 113);
+    background-image: url(/assets/hed.jpeg);
+    background-repeat: no-repeat;
+    background-size: 250px 750px;
+    opacity: 0.7;
   }
   
   .divClass {
